@@ -1,19 +1,44 @@
 import React from 'react'
+import { personal_projects, industry_projects } from '../project_data'
 
 const Project = () => {
 
-  const Projects = (props) => {
+  const ProjectCard = (props) => {
     return (
-        <div className="part">
-          <p className='project-title'><span>{props.title} </span></p>
-          { props.company && <p className="company-name"><span>Company:</span> {props.company}</p>}
-          <p className="tech-stack"><span>Tech Stack:</span> {props.tech}</p>
-          <p className="role"><span>Role:</span> {props.role}</p>
-          <div className="view-more-div">
-            <button className="view-more">View Details</button>
-          </div>
+      <div className="part">
+        <p className='project-title'>{props.title}</p>
+        {props.company && <p className="company-name"><span>Company:</span> {props.company}</p>}
+        <p className="tech-stack"><span><strong>Tech Stack:</strong></span> {props.tech}</p>
+        <p className="role"><span>Role:</span> {props.role}</p>
+        <div className="view-more-div">
+          <button className="view-more">View Details</button>
         </div>
-    ) 
+      </div>
+    )
+  }
+
+  const PersonalProjects = () => {
+    return personal_projects.map((project, index) => (
+      <ProjectCard
+        key={index}
+        title={project.title}
+        company={project.company}
+        tech={project.tech}
+        role={project.role}
+      />
+    ))
+  }
+
+  const IndustryProjects = () => {
+    return industry_projects.map((project, index) => (
+      <ProjectCard 
+        key={index}
+        title={project.title}
+        company={project.company}
+        tech={project.tech}
+        role={project.role}
+      />
+    ))
   }
 
   return (
@@ -23,18 +48,7 @@ const Project = () => {
           <span className="green">&lt;</span> Industry Projects <span className="green">&gt;</span>
         </div>
         <div className="lists">
-          <Projects
-            title='Biometric Attendance and Employee Management System'
-            company='Kanchi Karpooram Limited'
-            tech='Html, Css, Js, Flask and Sqlalchemy'
-            role='Backend Developer'
-          />
-          <Projects
-            title='Internship'
-            company='Altruisty'
-            tech='Node Js, React Js, Firebase'
-            role='Full Stack Developer'
-          />
+          {IndustryProjects()}
         </div>
       </div>
       <div className="personal-projects">
@@ -42,36 +56,7 @@ const Project = () => {
           <span className="green">&lt;</span> Personal projects <span className="green">&gt;</span>
         </div>
         <div className="lists">
-          <Projects
-            title='Real Time Chat Application'
-            tech='Flask, MongoDb and React Js'
-            role='Full Stack Developer'
-          />
-          <Projects
-            title='Real Time Chat Application'
-            tech='MERN Stack'
-            role='Full Stack Developer'
-          />
-          <Projects
-            title='Personal portfolio'
-            tech='React Js'
-            role='Frontend Developer'
-          />
-          <Projects
-            title='Whatsapp Clone'
-            tech='Html, Css, Js'
-            role='Frontend Developer'
-          />
-          <Projects
-            title='College Event page'
-            tech='React Js, Node Js, Mongo Db'
-            role='Full Stack Developer'
-          />
-          <Projects
-            title='Socket IO Project'
-            tech='Html, Css, js, Flask, SocketIO'
-            role='Full Stack Developer'
-          />
+          {PersonalProjects()}
         </div>
       </div>
     </div>
