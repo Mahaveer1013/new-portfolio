@@ -525,6 +525,17 @@ footer .links a:hover{
     background-color: var(--c-tertiary);
 }
 
+.project-popup-main{
+    background: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 110px;
+    height: 90%;
+    width: auto;
+}
+
 @media all and (max-width: 1024px){
     .home .left{
         width: 400px;
