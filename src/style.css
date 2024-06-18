@@ -42,11 +42,19 @@ body{
     min-height: 100vh;
 }
 
+/* .header{
+    position: fixed;
+    width: 100%;
+} */
+
 header{
     padding: 15px 0 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 header .logo{
@@ -151,9 +159,14 @@ footer .links a{
     color: var(--c-secondary);
 }
 
+footer .links a:hover{
+    color: var(--bg-tertiary);
+}
+
 .container{
     padding: 30px;
-    width: calc(100vw - 60px);
+    padding-top: 110px;
+    width: 100%;
 }
 
 /* home section */
@@ -268,9 +281,20 @@ footer .links a{
     background-color: var(--bg-tertiary);
     color: var(--bg-primary);
 }
+
+.home .contact-btns .hire-me-btn:hover{
+    background-color: var(--bg-tertiary-hover);
+    color: var(--bg-secondary);
+}
+
 .home .contact-btns .send-email-btn{
     color: var(--c-primary);
     background-color: var(--bg-secondary-hover);
+}
+
+.home .contact-btns .send-email-btn:hover{
+    background-color: var(--bg-secondary);
+    color: var(--c-tertiary);
 }
 
 /* about section */
@@ -422,6 +446,83 @@ footer .links a{
     border-radius: 4px
 }
 
+/* project section */
+
+.projects .title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.projects .work-experiences, .projects .personal-projects{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.projects .part:hover{
+    background-color: var(--bg-secondary-transparent);
+}
+
+.projects .lists{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .part{
+    margin-top: 15px;
+    background-color: var(--bg-secondary-hover);
+    height: auto;
+    transition: .3s;
+    border-radius: 3px;
+    padding: 20px;
+    width: 40%;
+    min-width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projects .part span{
+    color: var(--bg-tertiary);
+}
+
+.projects .part .view-more-div{
+    width: 100%;
+    text-align: center;
+}
+
+.projects .part .project-title{
+    font-size: 20px;
+    border-bottom: 1px solid var(--c-tertiary);
+    padding-bottom: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.projects .part .view-more{
+    border: none;
+    background-color: var(--c-secondary);
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 5px 10px;
+    width: 130px;
+    font-size: 16px;
+}
+
+.projects .part .view-more:hover{
+    background-color: var(--c-tertiary);
+}
+
 @media all and (max-width: 1024px){
     .home .left{
         width: 400px;
@@ -435,6 +536,7 @@ footer .links a{
     .container{
         width: 100%;
         padding: 10px;
+        padding-top: 110px;
     }
     header nav ul li .icon{
         display: none;
@@ -461,6 +563,9 @@ footer .links a{
     .contact-form, .contact-form form{
         padding: 10px;
     }
+    .projects .part{
+        width: 90%;
+    }
 }
 
 
@@ -476,24 +581,23 @@ footer .links a{
 
 
 @media all and (max-width: 425px){
-    /* .home .left .profile .profile-stand{
-        height: 40px;
-    }
-    .home .left .profile img{
-        width: 297px;
-        bottom: -302px;
-    } */
     .contact-me .title{
         font-size: 15px;
     }
     .contact-form form{
         width: 100%;
     }
+    .projects .part{
+        padding: 10px;
+        min-width: 310px;
+        width: 90%;
+        font-size: 14px;
+    }
+    
 }
 
 @media all and (max-width: 375px){
     header{
-        /* padding-left: 5px; */
         height: 70px;
     }
     header .logo{
