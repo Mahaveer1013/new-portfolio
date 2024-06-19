@@ -1,17 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { personal_projects, industry_projects } from '../project_data'
-import ProjectPopup from '../components/ProjectPopup'
+import { Link } from 'react-router-dom'
 
 
 const Project = () => {
 
-  const [popupData, setPopupData] = useState(null)
-  
-  const openPopup = (props) => {
-    setPopupData(props);
-  }
-
-  const ProjectCard = ({index, data}) => {
+  const ProjectCard = ({ data, type, index }) => {
+    console.log(`${type}/${index}`);
     return (
       <div className="part" key={index}>
         <p className='project-title'>{data.title}</p>
@@ -19,7 +14,7 @@ const Project = () => {
         <p className="tech-stack"><span><strong>Tech Stack:</strong></span> {data.tech}</p>
         <p className="role"><span>Role:</span> {data.role}</p>
         <div className="view-more-div">
-          <button className="view-more" onClick={()=> openPopup(data)}>View Details</button>
+          <Link to={`${type}/${index}`} className="view-more">View Details</Link>
         </div>
       </div>
     )
@@ -29,7 +24,9 @@ const Project = () => {
     return personal_projects.map((project, index) => (
       <ProjectCard
         key={index}
+        index = {index}
         data = {project}
+        type = 'personal_projects'
       />
     ))
   }
@@ -38,14 +35,15 @@ const Project = () => {
     return industry_projects.map((project, index) => (
       <ProjectCard 
         key={index}
-        data = {project}
+        index={index}
+        data={project}
+        type = 'industry_projects'
       />
     ))
   }
 
   return (
     <div className='projects'>
-      {popupData && <ProjectPopup data={ popupData } />}
       <div className="work-experiences">
         <div className="title">
           <span className="green">&lt;</span> Industry Projects <span className="green">&gt;</span>

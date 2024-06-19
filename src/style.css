@@ -526,14 +526,49 @@ footer .links a:hover{
 }
 
 .project-popup-main{
-    background: beige;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 110px;
-    height: 90%;
-    width: auto;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.project-popup-main .left, .project-popup-main .right{
+    width: 90%;
+    height: auto;
+    top: 150px;
+}
+
+.project-popup-main .right p{
+    margin: 15px 0;
+}
+
+.project-popup-main .left .title{
+    margin-bottom: 15px;
+}
+
+.project-popup-main .left img{
+    width: 100%;
+}
+
+.project-table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.proj-details table tr th{
+    text-align: start;
+    padding: 10px;
+}
+
+.project-popup-main .proj-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 @media all and (max-width: 1024px){
@@ -590,6 +625,10 @@ footer .links a:hover{
         width: 100%;
         height: 500px;
     }
+    .project-popup-main .left, .project-popup-main .right{
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -623,6 +662,15 @@ footer .links a:hover{
     }
     header nav ul li a p{
         font-size: 16px;
+    }
+    .project-popup-main{
+        font-size: 12px;
+    }
+    .proj-details table tr th{
+        padding: 5px;
+    }
+    .proj-details table{
+        width: 100%;
     }
 }
 

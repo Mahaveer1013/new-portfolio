@@ -7,6 +7,7 @@ import Home from './Home'
 import Project from './Project'
 import Footer from '../components/Footer'
 import Particle from '../components/Particle'
+import ProjectPopup from '../components/ProjectPopup'
 
 export const Main = () => {
   return (
@@ -19,6 +20,7 @@ export const Main = () => {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/projects' element={<Project />} />
+            <Route path='/projects/:type/:index' element={<ProjectPopup />} />
             <Route path='/contact-me' element={<ContactMe />} />
           </Routes>
         </div>
