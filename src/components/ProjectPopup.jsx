@@ -60,6 +60,12 @@ const ProjectPopup = () => {
                     <td> {project.company}</td>
                   </tr>
                 }
+                {project.link &&
+                  <tr>
+                    <th><span className="green">Link:</span></th>
+                    <td> <a href={project.link} className='link-to-project'>Click here to view</a></td>
+                  </tr>
+                }
                 {project.tech  &&
                   <tr>
                     <th><span className="green">Tech Stack:</span></th>

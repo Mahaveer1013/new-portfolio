@@ -571,6 +571,11 @@ footer .links a:hover{
     margin-bottom: 20px;
 }
 
+.link-to-project{
+    color: rgb(81, 184, 240);
+    text-decoration: underline;
+}
+
 @media all and (max-width: 1024px){
     .home .left{
         width: 400px;
