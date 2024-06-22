@@ -22,6 +22,7 @@ span.green{
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
 body{

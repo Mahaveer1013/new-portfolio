@@ -4,6 +4,7 @@ import React from 'react'
 import { FaGithub, FaLinkedin, FaGoogle } from 'react-icons/fa';
 
 const Footer = () => {
+  
   return (
         <footer>
           <div className="title">

@@ -5,6 +5,15 @@ import Profile from '../images/my_image1.png'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
+
+  const copyToClipboard = () => {
+    const email = 'mahaveer30032005@gmail.com';
+    navigator.clipboard.writeText(email).then(() => {
+      alert('Email copied to clipboard');
+    }).catch(err => {
+      console.error('Failed to copy email: ', err);
+    });
+  };
   
   return (
     <div className='home'>
@@ -30,10 +39,10 @@ const Home = () => {
             <FontAwesomeIcon icon={faPlus} />
             Hire me
           </Link>
-          <a href='https://mail.google.com/mail/?view=cm&fs=1&to=mahaveer30032005%40gmail.com' className='btn send-email-btn'>
+          <button className='btn send-email-btn' onClick={copyToClipboard}>
             <FontAwesomeIcon icon={faPaperPlane} />
             Copy Email
-          </a>
+          </button>
         </p>
       </div>
     </div>
