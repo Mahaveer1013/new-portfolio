@@ -43,11 +43,10 @@ const About = () => {
           <ul>
           <li><span><FaHtml5 /></span> HTML</li>
             <li><span><FaCss3Alt /></span> CSS</li>
+            <li><span><FaCss3Alt /></span> Tailwind CSS</li>
             <li><span><FaJsSquare /></span> JavaScript</li>
-            <li><span><FaPython /></span> Python</li>
-            <li><span><FaPython /></span> Flask</li>
-            <li><span><FaPython /></span> FastAPI</li>
-            <li><span><FaPython /></span> Django (Basics)</li>
+            <li><span><FaPython /></span> Python (Flask, Django)</li>
+            <li><span><FaPython /></span> API development (FastAPI)</li>
             <li><span><FaNode /></span> Node.js</li>
             <li><span><FaReact /></span> React.js</li>
             <li><span><DiMongodb /></span> MongoDB</li>
