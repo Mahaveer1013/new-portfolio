@@ -3,6 +3,7 @@ import pecEventPage from './images/main-page-event.png'
 import portfolio from './images/portfolio.png'
 import whatsappClone from './images/whatsapp-clone.png'
 import kkl from './images/kkl.png'
+import codesapiens from './images/codesapiens.png'
 
 export const industry_projects = [
     {
@@ -32,6 +33,26 @@ export const industry_projects = [
 
 export const personal_projects = [
     {
+        title: 'Pull Request Management System',
+        tech: 'MERN Stack',
+        role: 'Full stack developer',
+        description: `1. The project is for a developer community ( CodeSapiens ) ( Front-end Developer ).
+        2. I have personally build the backend API in Node JS. 
+        3. The webpage has connected to some of the repositories i have included, and i can manage all the pull requests made to that specific repos.
+        4. It also has authenticated and secure login functionality with JWT authentication.
+        5. And has a point based on successfull merge of a pull request.`,
+        screenshot: codesapiens,
+        link: 'https://mahaveer-pr-management-system.vercel.app/#/'
+    },
+    {
+        title: 'Whatsapp Clone',
+        tech: 'Html, Css, Js',
+        role: 'Frontend Developer',
+        description: `I have clone the Whatsapp web which include light and dark theme too. I have used pure Html, Css, Js for this project`,
+        screenshot: whatsappClone,
+        link: 'https://mahaveer-wp-clone.netlify.app/'
+    },
+    {
         title: 'Real Time Chat Application',
         tech: 'Flask, MongoDb and React Js',
         role: 'Full Stack Developer',
@@ -50,14 +71,6 @@ export const personal_projects = [
         link: 'https://mahaveer-portfolio-1013.netlify.app/',
     },
     {
-        title: 'Whatsapp Clone',
-        tech: 'Html, Css, Js',
-        role: 'Frontend Developer',
-        description: `I have clone the Whatsapp web which include light and dark theme too. I have use pure Html, Css, Js for this project`,
-        screenshot: whatsappClone,
-        link: 'https://mahaveer-wp-clone.netlify.app/'
-    },
-    {
         title: 'College Event page',
         tech: 'React Js, Node Js, Mongo Db',
         role: 'Full Stack Developer',
@@ -72,7 +85,7 @@ export const personal_projects = [
         description: 'A project done for mastering the SocketIO concepts and its functions in flask.'
     },
     {
-        title: 'Real Time Chat Application',
+        title: 'MERN - Chat Application',
         tech: 'MERN Stack',
         role: 'Full Stack Developer',
         description: `A real time chat application using SocketIO, 

@@ -12,17 +12,26 @@ const ContactMe = () => {
       <div className="contact-form">
         <form className='contact-me-form' method='POST' action='https://formspree.io/f/xnnaapqn'>
           <div className="part">
-            <label htmlFor="subject">Project Title: </label>
+            <label htmlFor="subject">Subject: </label>
             <input
               type="text"
               id='subject'
-              placeholder='Eg: E-Commerce Website'
+              placeholder='Eg: Regarding development project...'
               name='subject'
               className='contact-input'
             />
           </div>
           <div className="part">
-            <label htmlFor="description">Project Description: </label>
+            <label htmlFor="description">Contact: </label>
+            <textarea
+              id='email'
+              placeholder='How can i contact you?'
+              name='email'
+              className='contact-input'
+            />
+          </div>
+          <div className="part">
+            <label htmlFor="description">Description: </label>
             <textarea
               id='description'
               placeholder='Explain briefly'
