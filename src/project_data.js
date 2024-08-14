@@ -3,11 +3,13 @@ import pecEventPage from './images/main-page-event.png'
 import portfolio from './images/portfolio.png'
 import whatsappClone from './images/whatsapp-clone.png'
 import kkl from './images/kkl.png'
+import eCommerce from './images/e-commerce.png'
 import codesapiens from './images/codesapiens.png'
 
 export const industry_projects = [
     {
         title: 'Pull Request Management System',
+        company: 'Codesapiens',
         tech: 'ReactJs with Cloud Firebase',
         role: 'Full stack developer',
         description: `1. The project is done a developer community ( CodeSapiens ).
@@ -68,6 +70,27 @@ export const personal_projects = [
                         2. Flask Act as a API for backend
                         3. Mongo Db for database`,
         screenshot:chatApp,
+    },
+    {
+        title: 'E Commerce Website',
+        tech: 'MERN Stack',
+        role: 'Full Stack Developer',
+        description: `This Project is been given as a task for checking my capability from a company \"Critter Graphix\" for an Internship.
+         Task: Develop a Full-Fledged E-Commerce Website.
+         Objective: Create a comprehensive e-commerce platform with user authentication, product management, a shopping cart, and order management.
+         Requirements: User Authentication: Implement user registration and login.
+         Use JWT for secure authentication.
+         Protect routes to ensure only authenticated users can access certain pages.
+         Product Management: Admin can add, update, and delete products.
+         Each product should have attributes like name, description, price, and image.
+         Implement an admin panel for product management.
+         Shopping Cart: Users can browse products and add them to their shopping cart.
+         Users can view the cart, update quantities, and remove items. Users can proceed to checkout to finalize their purchase.
+         Ensure users receive a confirmation of their payment and order.
+         Order Management: Users can view their order history, including details of past purchases.
+         Admin can manage orders, including viewing all orders, updating order statuses, and handling customer issues.`,
+        screenshot: eCommerce,
+        // link: 'comming soon.',
     },
     {
         title: 'Personal portfolio',
