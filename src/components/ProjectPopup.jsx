@@ -63,7 +63,7 @@ const ProjectPopup = () => {
                 {project.link &&
                   <tr>
                     <th><span className="green">Link:</span></th>
-                    <td> <a href={project.link} className='link-to-project'>Click here to view</a></td>
+                    <td> <a href={project.link} className='link-to-project' target="_blank" rel="noopener noreferrer">Click here to view</a></td>
                   </tr>
                 }
                 {project.tech  &&
