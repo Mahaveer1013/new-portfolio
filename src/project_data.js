@@ -7,6 +7,18 @@ import codesapiens from './images/codesapiens.png'
 
 export const industry_projects = [
     {
+        title: 'Pull Request Management System',
+        tech: 'ReactJs with Cloud Firebase',
+        role: 'Full stack developer',
+        description: `1. The project is done a developer community ( CodeSapiens ).
+        2. I have personally build the backend API in Node JS. 
+        3. The webpage has connected to some of the repositories i have included, and i can manage all the pull requests made to that specific repos.
+        4. It also has authenticated and secure login functionality with JWT authentication.
+        5. And has a point based on successfull merge of a pull request.`,
+        screenshot: codesapiens,
+        link: 'https://codesapiens.in'
+    },
+    {
         title: 'Biometric Attendance and Employee Management System',
         company: 'Kanchi Karpooram Limited',
         tech: 'Html, Css, Js, Flask and Sqlalchemy',
@@ -27,23 +39,11 @@ export const industry_projects = [
         tech: 'Node Js, React Js, Firebase',
         role: 'Full Stack Developer',
         description: `Currently I'm working there as a intern`,
-        duration: '2 Months'
+        duration: '3 Months'
     },
 ];
 
 export const personal_projects = [
-    // {
-    //     title: 'Pull Request Management System',
-    //     tech: 'MERN Stack',
-    //     role: 'Full stack developer',
-    //     description: `1. The project is for a developer community ( CodeSapiens ) ( Front-end Developer ).
-    //     2. I have personally build the backend API in Node JS. 
-    //     3. The webpage has connected to some of the repositories i have included, and i can manage all the pull requests made to that specific repos.
-    //     4. It also has authenticated and secure login functionality with JWT authentication.
-    //     5. And has a point based on successfull merge of a pull request.`,
-    //     screenshot: codesapiens,
-    //     link: 'https://mahaveer-pr-management-system.vercel.app/#/'
-    // },
     {
         title: 'Whatsapp Clone',
         tech: 'Html, Css, Js',
@@ -51,6 +51,13 @@ export const personal_projects = [
         description: `I have clone the Whatsapp web which include light and dark theme too. I have used pure Html, Css, Js for this project`,
         screenshot: whatsappClone,
         link: 'https://mahaveer-wp-clone.netlify.app/'
+    },
+    {
+        title: 'Authentix - npm package',
+        tech: 'Node JS',
+        role: 'Full Stack Developer',
+        description: `Kindly visit the link for more details about my package.`,
+        link: 'https://www.npmjs.com/package/authentix?activeTab=readme'
     },
     {
         title: 'Real Time Chat Application',
