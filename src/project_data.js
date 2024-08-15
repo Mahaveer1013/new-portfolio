@@ -69,7 +69,7 @@ export const personal_projects = [
                         1. React Js for frontend 
                         2. Flask Act as a API for backend
                         3. Mongo Db for database`,
-        screenshot:chatApp,
+        screenshot: chatApp,
     },
     {
         title: 'E Commerce Website',
@@ -90,7 +90,7 @@ export const personal_projects = [
          Order Management: Users can view their order history, including details of past purchases.
          Admin can manage orders, including viewing all orders, updating order statuses, and handling customer issues.`,
         screenshot: eCommerce,
-        // link: 'comming soon.',
+        link: 'https://mahaveer-e-commerce.netlify.app',
     },
     {
         title: 'Personal portfolio',
@@ -122,6 +122,6 @@ export const personal_projects = [
                         1. React Js for frontend 
                         2. Node Js for backend
                         3. Mongo Db for database`,
-        screenshot:chatApp,
+        screenshot: chatApp,
     },
-  ];
+];
