@@ -12,11 +12,10 @@ export const industry_projects = [
         company: 'Codesapiens',
         tech: 'ReactJs with Cloud Firebase',
         role: 'Full stack developer',
-        description: `1. The project is done a developer community ( CodeSapiens ).
-        2. I have personally build the backend API in Node JS. 
-        3. The webpage has connected to some of the repositories i have included, and i can manage all the pull requests made to that specific repos.
-        4. It also has authenticated and secure login functionality with JWT authentication.
-        5. And has a point based on successfull merge of a pull request.`,
+        description: `1. The project is done for a developer community ( CodeSapiens ).
+        2. The webpage has connected to some of the repositories that have been included, and i can manage all the pull requests made to that specific repos.
+        3. It also has authenticated and secure login functionality with JWT authentication.
+        4. And has a point system based on successfull merge of a pull request.`,
         screenshot: codesapiens,
         link: 'https://codesapiens.in'
     },
