@@ -11,9 +11,9 @@ const Footer = () => {
           <span className="green"><FontAwesomeIcon icon={faCircle} /></span> Available for job
             </div>
             <div className="links">
-                <a href="https://github.com/Mahaveer1013/"><FaGithub /> Github</a>
-                <a href="https://linkedin.com/in/mahaveer1013"><FaLinkedin /> Linked In</a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mahaveer30032005%40gmail.com"><FaGoogle /> Gmail</a>
+                <a href="https://github.com/Mahaveer1013/" target='_blank'><FaGithub /> Github</a>
+                <a href="https://linkedin.com/in/mahaveer1013" target='_blank'><FaLinkedin /> Linked In</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mahaveer30032005%40gmail.com" target='_blank'><FaGoogle /> Gmail</a>
             </div>
         </footer>
     )
