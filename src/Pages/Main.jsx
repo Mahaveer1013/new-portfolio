@@ -8,6 +8,7 @@ import Project from './Project'
 import Footer from '../components/Footer'
 import Particle from '../components/Particle'
 import ProjectPopup from '../components/ProjectPopup'
+import ScrollToTop from '../components/ScrollToTop'
 
 export const Main = () => {
   return (
@@ -15,6 +16,7 @@ export const Main = () => {
       <div className='main'>
         <Particle />
         <Header />
+        <ScrollToTop />
         <div className="container">
           <Routes>
             <Route path='/' element={<Home />} />

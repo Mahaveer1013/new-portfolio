@@ -148,12 +148,11 @@ footer {
 }
 
 footer .links {
-    padding-top: 15px;
-    width: 100%;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 15px;
+    column-gap: 30px;
 }
 
 .footer-links {
@@ -842,6 +841,16 @@ footer .links a:hover {
     .project-popup-main .right {
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    footer .links {
+        gap: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    footer .links a svg{
+        display: none;
     }
 }
 
