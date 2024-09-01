@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-:root{
+:root {
     --bg-primary: #171717;
     --bg-secondary: #222227;
     --bg-secondary-transparent: #222227b4;
@@ -12,11 +12,11 @@
     --c-tertiary: #bbb8b8;
 }
 
-span.green{
+span.green {
     color: var(--bg-tertiary);
-}   
+}
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -25,7 +25,7 @@ span.green{
     letter-spacing: 1px;
 }
 
-body{
+body {
     font-family: 'Inter', sans-serif;
     height: auto;
     min-height: 100vh;
@@ -33,22 +33,19 @@ body{
     color: white;
 }
 
-.home, .about, .contact-me, .projects{
-    animation: fade-up 2s; 
+.home,
+.about,
+.contact-me,
+.projects {
+    animation: fade-up 2s;
 }
 
-.main{
+.main {
     position: relative;
-    padding-bottom: 130px;
-    min-height: 100vh;
+    padding-bottom: 200px;
 }
 
-/* .header{
-    position: fixed;
-    width: 100%;
-} */
-
-header{
+header {
     padding: 15px 0 0 25px;
     display: flex;
     justify-content: space-between;
@@ -58,7 +55,7 @@ header{
     z-index: 2;
 }
 
-header .logo{
+header .logo {
     cursor: pointer;
     width: 70px;
     height: 70px;
@@ -66,15 +63,15 @@ header .logo{
     font-weight: bolder;
     border-radius: 50%;
     background-color: var(--bg-secondary);
-    
+
 }
 
-header .logo:hover{
+header .logo:hover {
     box-shadow: 0 0 6px 5px var(--bg-secondary-hover);
     background-color: var(--bg-secondary-hover);
 }
 
-header .logo a{
+header .logo a {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -85,12 +82,12 @@ header .logo a{
     gap: 3px;
 }
 
-header nav{
+header nav {
     flex-grow: .95;
     height: 70px;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     justify-content: space-around;
     background-color: var(--bg-secondary);
@@ -100,7 +97,7 @@ header nav ul{
     border: 1px solid #27272a;
 }
 
-header nav ul li a{
+header nav ul li a {
     display: flex;
     gap: 5px;
     cursor: pointer;
@@ -110,35 +107,36 @@ header nav ul li a{
     border-radius: 3px;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     box-shadow: 0 0 6px 5px var(--bg-secondary-hover);
     background-color: var(--bg-secondary-hover);
 }
 
-header nav ul li svg{
+header nav ul li svg {
     color: var(--c-secondary);
 }
 
-header nav ul li:hover svg{
+header nav ul li:hover svg {
     color: var(--c-primary);
 }
 
-header nav ul li p{
+header nav ul li p {
     transition: .3s;
     color: var(--c-secondary);
 }
 
-header nav ul li:hover p{
+header nav ul li:hover p {
     color: var(--bg-tertiary);
 }
 
-header .active p{
+header .active p {
     box-shadow: 0 0 6px 5px var(--bg-secondary-hover);
     color: var(--bg-tertiary);
 }
 
-footer{
-    height: 100px;
+footer {
+    padding: 15px;
+    height: auto;
     background-color: var(--bg-secondary);
     position: absolute;
     width: 100%;
@@ -149,14 +147,22 @@ footer{
     flex-direction: column;
 }
 
-footer .links{
+footer .links {
+    padding-top: 15px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 15px;
 }
 
-footer .links a{
+.footer-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+footer .links a {
     color: var(--c-secondary);
     display: flex;
     justify-content: center;
@@ -164,11 +170,11 @@ footer .links a{
     gap: 5px;
 }
 
-footer .links a:hover{
+footer .links a:hover {
     color: var(--bg-tertiary);
 }
 
-.container{
+.container {
     padding: 30px;
     padding-top: 110px;
     width: 100%;
@@ -176,24 +182,24 @@ footer .links a:hover{
 
 /* home section */
 
-.home{
+.home {
     display: grid;
     grid-template-areas: 'title title' 'home-right home-left';
     place-content: center;
     place-items: center;
 }
 
-.home .home-title{
+.home .home-title {
     grid-area: title;
     text-align: center;
     margin: 15px 0;
 }
 
-.home .home-title .icon{
+.home .home-title .icon {
     color: var(--bg-tertiary);
 }
 
-.home .left{
+.home .left {
     width: 500px;
     display: flex;
     justify-content: center;
@@ -202,7 +208,7 @@ footer .links a:hover{
     height: 500px;
 }
 
-.home .left .profile{
+.home .left .profile {
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -211,7 +217,7 @@ footer .links a:hover{
     overflow: hidden;
 }
 
-.home .left .profile .profile-stand{
+.home .left .profile .profile-stand {
     width: 90%;
     height: 200px;
     background-color: var(--bg-secondary-hover);
@@ -223,13 +229,13 @@ footer .links a:hover{
     align-items: center;
 }
 
-.home .left .profile img{
+.home .left .profile img {
     width: 320px;
     position: absolute;
     bottom: -30px;
 }
 
-.home .right{
+.home .right {
     width: 100%;
     grid-area: home-right;
     display: flex;
@@ -239,12 +245,12 @@ footer .links a:hover{
     justify-content: center;
 }
 
-.home .right p{
+.home .right p {
     letter-spacing: 1px;
     text-align: center;
 }
 
-.home .right .title{
+.home .right .title {
     margin-top: 20px;
     font-size: 45px;
     width: 100%;
@@ -255,20 +261,21 @@ footer .links a:hover{
     flex-direction: column;
 }
 
-.home .right .title span{
+.home .right .title span {
     color: var(--bg-tertiary);
 }
 
-.home .right .description{
+.home .right .description {
     margin-top: 10px;
 }
 
-.home .contact-btns{
+.home .contact-btns {
     display: flex;
     gap: 15px;
     margin-top: 20px;
 }
-.home .contact-btns .btn{
+
+.home .contact-btns .btn {
     padding: 7px 14px;
     border-radius: 3px;
     border: none;
@@ -282,38 +289,110 @@ footer .links a:hover{
     align-items: center;
 }
 
-.home .contact-btns .hire-me-btn{
+.home .contact-btns .hire-me-btn {
     background-color: var(--bg-tertiary);
     color: var(--bg-primary);
 }
 
-.home .contact-btns .hire-me-btn:hover{
+.home .contact-btns .hire-me-btn:hover {
     background-color: var(--bg-tertiary-hover);
     color: var(--bg-secondary);
 }
 
-.home .contact-btns .send-email-btn{
+.home .contact-btns .send-email-btn {
     color: var(--c-primary);
     background-color: var(--bg-secondary-hover);
 }
 
-.home .contact-btns .send-email-btn:hover{
+.home .contact-btns .send-email-btn:hover {
     background-color: var(--bg-secondary);
     color: var(--c-tertiary);
 }
 
+/* Define keyframes for animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-40%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes button-hover {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Apply animations to elements */
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
+.animate-slide-in {
+    animation: slide-in 0.8s ease-out;
+}
+
+.animate-button {
+    transition: transform 0.3s ease;
+}
+
+.animate-button:hover {
+    animation: button-hover 0.3s ease forwards;
+}
+
+/* Optional: Style for the profile and buttons */
+.home-title,
+.left,
+.right {
+    margin-bottom: 1.5rem;
+    /* Adjust spacing as needed */
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+.contact-btns .btn {
+    margin-right: 0.5rem;
+    /* Adjust spacing as needed */
+}
+
+
 /* about section */
 
-.about{
+.about {
     display: grid;
     gap: 20px;
     grid-template-areas: 'overview skills';
     justify-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr)); /* Example grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    /* Example grid layout */
     grid-auto-flow: row;
 }
 
-.about .section{
+.about .section {
     background-color: var(--bg-secondary-hover);
     padding: 10px;
     width: 100%;
@@ -323,11 +402,11 @@ footer .links a:hover{
     max-width: 400px;
 }
 
-.about .overview{
+.about .overview {
     grid-area: overview;
 }
 
-.about .title{
+.about .title {
     color: var(--c-primary);
     font-size: 20px;
     display: flex;
@@ -347,7 +426,7 @@ footer .links a:hover{
     flex-wrap: wrap;
 }
 
-.about .description p{
+.about .description p {
     padding: 10px;
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -355,29 +434,84 @@ footer .links a:hover{
     border-radius: 5px;
     transition: .3s;
     color: var(--c-secondary);
-    
+
 }
 
 .about .section:hover {
     background-color: transparent;
 }
 
-.about .my-work{
+.about .my-work {
     grid-area: skills;
 }
 
-.skills .description ul li{
+.skills .description ul li {
     margin-bottom: 6px;
 }
 
-.skills .description ul li span{
+.skills .description ul li span {
     color: var(--bg-tertiary);
     margin-right: 5px;
 }
 
+/* Define keyframes for the animations */
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Define keyframes for animations */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Apply animations to the sections */
+.animate-slide-in-left {
+    animation: slide-in-left 0.5s ease-out;
+}
+
+.animate-slide-in-right {
+    animation: slide-in-right 0.5s ease-out;
+}
+
+/* Optional: Style for the sections */
+.section {
+    margin-bottom: 2rem;
+    /* Adjust spacing as needed */
+}
+
+
 /* contact me  */
 
-.contact-me{
+.contact-me {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -386,19 +520,19 @@ footer .links a:hover{
     min-height: 530px;
 }
 
-.contact-me .title{
+.contact-me .title {
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact-me .title span.green{
+.contact-me .title span.green {
     font-size: 10px;
     margin-right: 15px;
 }
 
-.contact-form{
+.contact-form {
     margin-top: 20px;
     width: 100%;
     display: flex;
@@ -409,7 +543,7 @@ footer .links a:hover{
     flex-direction: column;
 }
 
-.contact-form form{
+.contact-form form {
     background-color: var(--bg-secondary-transparent);
     width: 600px;
     flex-grow: 1;
@@ -422,7 +556,7 @@ footer .links a:hover{
     border-radius: 20px;
 }
 
-.contact-form form .part{
+.contact-form form .part {
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -431,18 +565,19 @@ footer .links a:hover{
     flex-direction: column;
 }
 
-.contact-form form .part .contact-input{
+.contact-form form .part .contact-input {
     width: 70%;
     padding: 6px;
     border-radius: 3px;
     outline: none;
 }
 
-.contact-form form .part .contact-input:hover, .contact-form form .part .contact-input:focus{
+.contact-form form .part .contact-input:hover,
+.contact-form form .part .contact-input:focus {
     background-color: var(--c-secondary);
 }
 
-.contact-form form button{
+.contact-form form button {
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -454,7 +589,7 @@ footer .links a:hover{
 
 /* project section */
 
-.projects .title{
+.projects .title {
     font-size: 20px;
     font-weight: 500;
 }
@@ -465,16 +600,17 @@ footer .links a:hover{
     width: 100%;
 }
 
-.projects .work-experiences, .projects .personal-projects{
+.projects .work-experiences,
+.projects .personal-projects {
     width: 100%;
     margin-bottom: 30px;
 }
 
-.projects .part:hover{
+.projects .part:hover {
     background-color: var(--bg-secondary-transparent);
 }
 
-.projects .lists{
+.projects .lists {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -482,7 +618,7 @@ footer .links a:hover{
     align-items: center;
 }
 
-.projects .part{
+.projects .part {
     margin-top: 15px;
     background-color: var(--bg-secondary-hover);
     height: auto;
@@ -496,16 +632,16 @@ footer .links a:hover{
     gap: 20px;
 }
 
-.projects .part span{
+.projects .part span {
     color: var(--bg-tertiary);
 }
 
-.projects .part .view-more-div{
+.projects .part .view-more-div {
     width: 100%;
     text-align: center;
 }
 
-.projects .part .project-title{
+.projects .part .project-title {
     font-size: 20px;
     border-bottom: 1px solid var(--c-tertiary);
     padding-bottom: 3px;
@@ -516,7 +652,7 @@ footer .links a:hover{
     text-wrap: nowrap;
 }
 
-.projects .part .view-more{
+.projects .part .view-more {
     border: none;
     background-color: var(--c-secondary);
     outline: none;
@@ -527,11 +663,11 @@ footer .links a:hover{
     font-size: 16px;
 }
 
-.projects .part .view-more:hover{
+.projects .part .view-more:hover {
     background-color: var(--c-tertiary);
 }
 
-.project-popup-main{
+.project-popup-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -541,163 +677,241 @@ footer .links a:hover{
     position: relative;
 }
 
-.project-popup-main .left, .project-popup-main .right{
+.project-popup-main .left,
+.project-popup-main .right {
     width: 90%;
     height: auto;
     top: 150px;
 }
 
-.project-popup-main .right p{
+.project-popup-main .right p {
     margin: 15px 0;
 }
 
-.project-popup-main .left .title{
+.project-popup-main .left .title {
     margin-bottom: 15px;
 }
 
-.project-popup-main .left img{
+.project-popup-main .left img {
     width: 100%;
 }
 
-.project-table{
+.project-table {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 15px;
 }
 
-.proj-details table tr th{
+.proj-details table tr th {
     text-align: start;
     padding: 10px;
 }
 
-.project-popup-main .proj-title{
+.project-popup-main .proj-title {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.link-to-project{
+.link-to-project {
     color: rgb(81, 184, 240);
     text-decoration: underline;
 }
 
-@media all and (max-width: 1024px){
-    .home .left{
+/* Apply animations to elements */
+/* Define keyframes for the animations */
+@keyframes project-slide-in-left {
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes project-slide-in-right {
+    0% {
+        transform: translateX(120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.projects .lists .part:nth-of-type(odd) {
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.projects .lists .part:nth-of-type(odd).animate {
+    animation: project-slide-in-left 0.8s ease-out forwards;
+    opacity: 1;
+    transform: translateX(0);
+}
+.projects .lists .part:nth-of-type(even) {
+    opacity: 0;
+    transform: translateX(120px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.projects .lists .part:nth-of-type(even).animate {
+    animation: project-slide-in-right 0.8s ease-out forwards;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Ensure elements are animated when they come into view */
+.projects .lists .part.animate {
+    opacity: 1;
+}
+
+
+@media all and (max-width: 1024px) {
+    .home .left {
         width: 400px;
     }
 }
 
-@media all and (max-width: 768px){
-    header{
+@media all and (max-width: 768px) {
+    header {
         padding-left: 5px;
     }
-    .container{
+
+    .container {
         width: 100%;
         padding: 10px;
         padding-top: 110px;
     }
-    header nav ul li .icon{
+
+    header nav ul li .icon {
         display: none;
     }
-    .home .left{
+
+    .home .left {
         width: 300px;
     }
-    .about{
+
+    .about {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .about .section{
+
+    .about .section {
         width: 90%;
     }
-    .contact-form form{
+
+    .contact-form form {
         width: 400px;
     }
-    .contact-form form .part .contact-input{
+
+    .contact-form form .part .contact-input {
         width: 100%;
     }
-    .contact-form, .contact-form form{
+
+    .contact-form,
+    .contact-form form {
         padding: 10px;
     }
-    .projects .part{
+
+    .projects .part {
         width: 90%;
     }
 }
 
 
 @media all and (max-width:650px) {
-    .home{
+    .home {
         grid-template-areas: 'home-left' 'title' 'home-right';
     }
-    .home .left{
+
+    .home .left {
         width: 100%;
         height: 500px;
     }
-    .project-popup-main .left, .project-popup-main .right{
+
+    .project-popup-main .left,
+    .project-popup-main .right {
         width: 100%;
         margin-bottom: 10px;
     }
 }
 
 
-@media all and (max-width: 425px){
-    .contact-me .title{
+@media all and (max-width: 425px) {
+    .contact-me .title {
         font-size: 15px;
     }
-    .contact-form form{
+
+    .contact-form form {
         width: 100%;
     }
-    .projects .part{
+
+    .projects .part {
         padding: 10px;
         min-width: 300px;
         width: 90%;
         font-size: 14px;
     }
-    
+
 }
 
-@media all and (max-width: 375px){
-    header{
+@media all and (max-width: 375px) {
+    header {
         height: 70px;
     }
-    header .logo{
+
+    header .logo {
         height: 50px;
         width: 50px;
         font-size: 20px;
     }
-    header nav{
+
+    header nav {
         height: 50px;
     }
-    header nav ul li a p{
+
+    header nav ul li a p {
         font-size: 16px;
     }
-    .project-popup-main{
+
+    .project-popup-main {
         font-size: 12px;
     }
-    .proj-details table tr th{
+
+    .proj-details table tr th {
         padding: 5px;
     }
-    .proj-details table{
+
+    .proj-details table {
         width: 100%;
     }
-    .contact-form form{
+
+    .contact-form form {
         background-color: transparent;
         box-shadow: none;
     }
-    .contact-me form{
+
+    .contact-me form {
         padding: 0;
     }
 }
 
 
 @keyframes fade-up {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }

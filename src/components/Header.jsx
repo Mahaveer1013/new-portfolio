@@ -23,7 +23,7 @@ const Header = () => {
                     <li>
                         <NavLink to='/projects'>
                             <span className='icon'><FontAwesomeIcon icon={faListCheck} /></span>
-                            <p>Projects</p>
+                            <p>Experience</p>
                         </NavLink>
                     </li>
                     <li>

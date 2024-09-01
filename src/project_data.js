@@ -5,20 +5,13 @@ import whatsappClone from './images/whatsapp-clone.png'
 import kkl from './images/kkl.png'
 import eCommerce from './images/e-commerce.png'
 import codesapiens from './images/codesapiens.png'
+import altruisty from './images/experience/altruisty.jpg'
+import upwork from './images/experience/upwork.png'
+import kkl_logo from './images/experience/kkl.jpg'
+
+import { FaArrowUp, FaStar } from 'react-icons/fa';
 
 export const industry_projects = [
-    {
-        title: 'Pull Request Management System',
-        company: 'Codesapiens',
-        tech: 'ReactJs with Cloud Firebase',
-        role: 'Full stack developer',
-        description: `1. The project is done for a developer community ( CodeSapiens ).
-        2. The webpage has connected to some of the repositories that have been included, and i can manage all the pull requests made to that specific repos.
-        3. It also has authenticated and secure login functionality with JWT authentication.
-        4. And has a point system based on successfull merge of a pull request.`,
-        screenshot: codesapiens,
-        link: 'https://codesapiens.in'
-    },
     {
         title: 'Biometric Attendance and Employee Management System',
         company: 'Kanchi Karpooram Limited',
@@ -41,6 +34,18 @@ export const industry_projects = [
         role: 'Full Stack Developer',
         description: `Currently I'm working there as a intern`,
         duration: '3 Months'
+    },
+    {
+        title: 'Pull Request Management System',
+        company: 'Codesapiens',
+        tech: 'ReactJs with Cloud Firebase',
+        role: 'Full stack developer',
+        description: `1. The project is done for a developer community ( CodeSapiens ).
+        2. The webpage has connected to some of the repositories that have been included, and i can manage all the pull requests made to that specific repos.
+        3. It also has authenticated and secure login functionality with JWT authentication.
+        4. And has a point system based on successfull merge of a pull request.`,
+        screenshot: codesapiens,
+        link: 'https://codesapiens.in'
     },
 ];
 
@@ -74,7 +79,7 @@ export const personal_projects = [
         title: 'E Commerce Website',
         tech: 'MERN Stack',
         role: 'Full Stack Developer',
-        description: `This Project is been given as a task for checking my capability from a company \"Critter Graphix\" for an Internship.
+        description: `This Project is been given as a task for checking my capability from a company "Critter Graphix" for an Internship.
          Task: Develop a Full-Fledged E-Commerce Website.
          Objective: Create a comprehensive e-commerce platform with user authentication, product management, a shopping cart, and order management.
          Requirements: User Authentication: Implement user registration and login.
@@ -97,14 +102,14 @@ export const personal_projects = [
         role: 'Frontend Developer',
         description: 'The Current Page You are Viewing.',
         screenshot: portfolio,
-        link: 'https://mahaveer-portfolio-1013.netlify.app/',
+        link: 'https://mahaveer-portfolio.vercel.app',
     },
     {
         title: 'College Event page',
         tech: 'React Js, Node Js, Mongo Db',
         role: 'Full Stack Developer',
         screenshot: pecEventPage,
-        link: 'https://main--pec-it-event-page.netlify.app/',
+        link: 'https://main--pec-it-event-page.netlify.app',
         description: 'A website made for a event to be conducted in our college.'
     },
     {
@@ -123,4 +128,48 @@ export const personal_projects = [
                         3. Mongo Db for database`,
         screenshot: chatApp,
     },
+];
+
+export const experience = [
+    {
+        "title": "Software Development Team Lead - Altruisty",
+        "location": "Remote",
+        "date": "Aug 2024 - Present",
+        "description": "Promoted as a team lead in the same company.",
+        "iconBackground": "rgb(255, 165, 0)",  // Different color to indicate promotion
+        "contentBackground": "var(--bg-secondary-hover)",
+        "image": altruisty,
+        "icon": <FaArrowUp />
+    },
+    {
+        "title": "Software Development Intern - Altruisty",
+        "location": "Remote",
+        "date": "Jun 2024 - Aug 2024",
+        "description": "Worked as a Software Development team member in an Intern",
+        "iconBackground": "rgb(16, 204, 82)",
+        "contentBackground": "var(--bg-secondary-hover)",
+        "image": altruisty,
+        "icon": <FaStar />
+    },
+    {
+        "title": "Full Stack Developer - Upwork",
+        "location": "Remote",
+        "date": "Feb 2024 - Mar 2024",
+        "description": "A shop management project completed for a Upwork client.",
+        "iconBackground": "rgb(16, 204, 82)",
+        "contentBackground": "var(--bg-secondary-hover)",
+        "image": upwork,
+        "icon": <FaStar />
+    },
+    {
+        "title": "Backend Developer - Kanchi Karpooram Limited",
+        "location": "Remote",
+        "date": "Mar 2023 - Feb 2024",
+        "description": "Worked as a backend developer on a Biometric Attendance and employee management system",
+        "iconBackground": "rgb(16, 204, 82)",
+        "contentBackground": "var(--bg-secondary-hover)",
+        "image": kkl_logo,
+        "icon": <FaStar />
+    }
+    // Add more elements as needed
 ];

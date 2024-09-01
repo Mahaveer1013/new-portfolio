@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaGoogle } from 'react-icons/fa';
 const Footer = () => {
   
   return (
-        <footer>
+    <footer>
           <div className="title">
           <span className="green"><FontAwesomeIcon icon={faCircle} /></span> Available for job
             </div>
