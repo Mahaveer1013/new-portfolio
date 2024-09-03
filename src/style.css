@@ -725,6 +725,7 @@ footer .links a:hover {
         transform: translateX(-120px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -736,6 +737,7 @@ footer .links a:hover {
         transform: translateX(120px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -753,6 +755,7 @@ footer .links a:hover {
     opacity: 1;
     transform: translateX(0);
 }
+
 .projects .lists .part:nth-of-type(even) {
     opacity: 0;
     transform: translateX(120px);
@@ -849,7 +852,7 @@ footer .links a:hover {
         width: 100%;
     }
 
-    footer .links a svg{
+    footer .links a svg {
         display: none;
     }
 }

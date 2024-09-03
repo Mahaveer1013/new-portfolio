@@ -61,9 +61,35 @@ export const personal_projects = [
     {
         title: 'Authentix - npm package',
         tech: 'Node JS',
-        role: 'Full Stack Developer',
+        role: 'Backend Developer',
         description: `Kindly visit the link for more details about my package.`,
         link: 'https://www.npmjs.com/package/authentix?activeTab=readme'
+    },
+    {
+        title: 'safeXchange - npm package',
+        tech: 'Node JS',
+        role: 'Backend developer',
+        description: `I have completed the basic code of the package, but not yet been fully configurable..
+        Details of this package will be shown clearly in my github README.md, Click the provide link to view it✌️.
+        And I have been facing a issue in publishing it in NPM
+        This is the error im facing still :
+
+            npm notice Publishing to https://registry.npmjs.org/ with tag latest and default access
+
+            npm ERR! code E403
+
+            npm ERR! 403 403 Forbidden - PUT https://registry.npmjs.org/safexchange
+
+            npm ERR! 403 In most cases, you or one of your dependencies are requesting
+
+            npm ERR! 403 a package version that is forbidden by your security policy, or
+
+            npm ERR! 403 on a server you do not have access to.
+
+            npm ERR! A complete log of this run can be found in: <log_file_path>
+            
+        If Anyone has experienced this issue and has a solution for it, kindly contact me✌️`,
+        link: 'https://github.com/Mahaveer1013/SafeXchange'
     },
     {
         title: 'Real Time Chat Application',
