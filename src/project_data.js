@@ -8,6 +8,7 @@ import codesapiens from './images/codesapiens.png'
 import altruisty from './images/experience/altruisty.jpg'
 import upwork from './images/experience/upwork.png'
 import kkl_logo from './images/experience/kkl.jpg'
+import manvian from './images/experience/manvian.png'
 
 import { FaArrowUp, FaStar } from 'react-icons/fa';
 
@@ -32,7 +33,11 @@ export const industry_projects = [
         company: 'Altruisty',
         tech: 'Node Js, React Js, Firebase',
         role: 'Full Stack Developer',
-        description: `Currently I'm working there as a intern`,
+        description: `I have been worked for a software which is basically a integrated platform which includes\n
+            1. Hackathons,\n
+            2. Challenges,\n
+            3. Connecting with fellow developers etc.. and also have been \n
+            Promoted to TEAM LEAD after 2 months of joining`,
         duration: '3 Months'
     },
     {
@@ -158,9 +163,19 @@ export const personal_projects = [
 
 export const experience = [
     {
+        "title": "Software Development Intern - Manvian",
+        "location": "Remote",
+        "date": "Sep 2024 - Present",
+        "description": "Working as a software devloper intern in Manvian, got role from linkedin.",
+        "iconBackground": "rgb(16, 204, 82)",  // Different color to indicate promotion
+        "contentBackground": "var(--bg-secondary-hover)",
+        "image": manvian,
+        "icon": <FaStar />
+    },
+    {
         "title": "Software Development Team Lead - Altruisty",
         "location": "Remote",
-        "date": "Aug 2024 - Present",
+        "date": "Aug 2024 - Sep 2024",
         "description": "Promoted to Team Lead, overseeing development projects and leading the team.",
         "iconBackground": "rgb(255, 165, 0)",  // Different color to indicate promotion
         "contentBackground": "var(--bg-secondary-hover)",
