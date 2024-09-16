@@ -1,4 +1,4 @@
-import { faCircle, faHome, faAddressCard, faPhone, faListCheck, faContactBook } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faHome, faAddressCard, faListCheck, faContactBook, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import React from 'react'
 import { FaGithub, FaLinkedin, FaGoogle } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,8 +16,8 @@ const Footer = () => {
       <div className="links">
         <a href="/"><FontAwesomeIcon icon={faHome} /> Home</a>
         <a href="/about"><FontAwesomeIcon icon={faAddressCard} /> About</a>
-        <a href="/projects"><FontAwesomeIcon icon={faListCheck} /> Experience</a>
-        <a href="/contact-me"><FontAwesomeIcon icon={faPhone} /> Contact-me</a>
+        <a href="/projects"><FontAwesomeIcon icon={faListCheck} /> Projects</a>
+        <a href="/experience"><FontAwesomeIcon icon={faArrowUp} /> Experience</a>
       </div>
       <div className="title" style={{padding: '15px 0'}}>
         <span className="green"><FontAwesomeIcon icon={faContactBook} /></span> Contact

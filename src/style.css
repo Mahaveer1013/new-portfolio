@@ -183,7 +183,7 @@ footer .links a:hover {
 
 .home {
     display: grid;
-    grid-template-areas: 'title title' 'home-right home-left';
+    grid-template-areas: 'title title' 'home-right home-left' 'contact contact';
     place-content: center;
     place-items: center;
 }
@@ -229,16 +229,15 @@ footer .links a:hover {
 }
 
 .home .left .profile img {
-    width: 320px;
+    width: 590px;
     position: absolute;
-    bottom: -30px;
+    bottom: -250px;
 }
 
 .home .right {
     width: 100%;
     grid-area: home-right;
     display: flex;
-    margin-right: 20px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -512,6 +511,7 @@ footer .links a:hover {
 
 .contact-me {
     margin-top: 20px;
+    grid-area: contact;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -832,7 +832,7 @@ footer .links a:hover {
 
 @media all and (max-width:650px) {
     .home {
-        grid-template-areas: 'home-left' 'title' 'home-right';
+        grid-template-areas: 'title' 'home-right' 'home-left' 'contact';
     }
 
     .home .left {

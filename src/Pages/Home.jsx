@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faPaperPlane, faPlus } from '@fortawesome/free-solid-svg-icons';
 import Profile from '../images/my_image1.png';
 import { Link } from 'react-router-dom';
+import ContactMe from '../components/ContactMe';
 
 const Home = () => {
 
@@ -45,6 +46,7 @@ const Home = () => {
           </button>
         </p>
       </div>
+      <ContactMe />
     </div>
   )
 }
