@@ -42,17 +42,16 @@ const About = () => {
           <div className="description">
             <ul>
               <li><span><FaHtml5 /></span> HTML</li>
-              <li><span><FaCss3Alt /></span> CSS</li>
-              <li><span><FaCss3Alt /></span> Tailwind CSS</li>
+              <li><span><FaCss3Alt /></span> CSS (Tailwind, Bootstrap)</li>
               <li><span><FaJsSquare /></span> JavaScript</li>
               <li><span><FaPython /></span> Python (Flask, Django)</li>
-              <li><span><FaPython /></span> API development (FastAPI)</li>
+              <li><span><FaPython /></span> API development </li>
               <li><span><FaNode /></span> Node.js</li>
-              <li><span><FaReact /></span> React.js</li>
-              <li><span><DiMongodb /></span> MongoDB</li>
-              <li><span><AiFillDatabase /></span> SQL</li>
-              <li><span><FaFire /></span> Firebase</li>
-              <li><span><FaGithub /></span> GitHub</li>
+              <li><span><FaReact /></span> React.js (NextJS)</li>
+              <li><span><DiMongodb /></span> NoSQL (MongoDB, FireStore)</li>
+              <li><span><AiFillDatabase /></span> SQL (Postgres, SqLite, MySql)</li>
+              <li><span><FaFire /></span> Cloud (Firebase)</li>
+              <li><span><FaGithub /></span> Git & GitHub</li>
             </ul>
           </div>
           <div className="title">
